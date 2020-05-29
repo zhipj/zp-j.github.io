@@ -5,7 +5,7 @@
 <p>但如果队列中只有一个进程，那这个进程在时间片运行完后，仍会立即继续下一个时间片地运行。为了防止这种情况，但一个进程连续两个时间片地运行完后，将被放在一个较低的运行队列中。</p>
 <p>而当进程没有妨碍其他进程的运行（即其时间片用完后，调度器调度了其他的进程运行）时，它的优先级又会不断提高直到到它能回到的（所允许的）最大优先级。这样，原先的被降低了优先级的进程在不妨碍别的进程下运行的情况下，能有机会逐步地回到原来的优先级。</p>
 <h3 id="Minix进程阻塞策略"><a href="#Minix进程阻塞策略" class="headerlink" title="Minix进程阻塞策略"></a>Minix进程阻塞策略</h3><p>如果程序阻塞后，它将由被移出调度队列。然后调度器再在调度队列中剩下的进程中选择一个程序运行。一个阻塞进程被唤醒后，得到的只是阻塞前所剩余的时间片。并将被放到原来调度队列的队首。</p>
-</div></article></div></section><footer><div class="paginator"><a href="/2013/12/02/minix/" class="prev">PREV</a><a href="/2013/11/15/stage-france/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'zhipeng';
+</div></article></div></section><footer><div class="paginator"><a href="/2013/12/02/minix/" class="prev">上一篇</a><a href="/2013/11/15/stage-france/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'zhipeng';
 var disqus_identifier = '2013/12/01/minix/';
 var disqus_title = 'Minix调度算法';
 var disqus_url = 'http://zpjiang.me/2013/12/01/minix/';
