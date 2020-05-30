@@ -6,9 +6,9 @@ MathJax = { tex: { tags: 'all' } };
 <p>Device: <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/" target="_blank" rel="noopener">Raspberry Pi 3 B+</a><br>Camera: <a href="https://www.raspberrypi.org/products/camera-module-v2/" target="_blank" rel="noopener">Raspberry Pi Camera v2.1</a></p>
 <p>I tried to use a Raspberry Pi to shoot a timelapse, to record the growth of my baby tangerine.</p>
 <p>However, after checking the first pilot, the tangerine plant is pretty blurry, the camera was focusing on somewhere far away but not the plant, like the floor in the background is clear. </p>
+<a id="more"></a>
 <p>I don’t expect the camera to be smart enough to auto-focus on an object for the price that I paid, but I’m wondering if there’s anything that we can tweak to improve it.</p>
 <p><img src="https://raw.githubusercontent.com/0x333333/blog_img/master/z_baby_tangerine.png" alt="Baby tangerine under Raspberry Pi Camera"></p>
-<a id="more"></a>
 <h2 id="How-to-adjust-Raspberry-Pi-Camera’s-focus"><a href="#How-to-adjust-Raspberry-Pi-Camera’s-focus" class="headerlink" title="How to adjust Raspberry Pi Camera’s focus?"></a>How to adjust Raspberry Pi Camera’s focus?</h2><p>The standard Pi Camera is a fixed-focus lens, it’s not like a <a href="https://en.wikipedia.org/wiki/Zoom_lens" target="_blank" rel="noopener">zoom lens</a>. However, the lens base is like a screw in a nut. You can <strong>adjust the lens focus by tightening or loosening the lens base</strong>, amazing! </p>
 <p>There are some <a href="https://projects.raspberrypi.org/en/projects/infrared-bird-box/6" target="_blank" rel="noopener">posts</a> talking about it. What surprises me is people are so smart that they can find the workaround, it doesn’t look like an official solution by design.</p>
 <p><img src="https://raw.githubusercontent.com/0x333333/blog_img/master/z_picamera.jpeg" alt="Raspberry Pi Camera Lens Base"></p>
@@ -48,6 +48,7 @@ MathJax = { tex: { tags: 'all' } };
 <li>When you screw anti-clockwise, don’t rotate too far, the lens base will pop out, it’s not that easy to put it back</li>
 <li>Some people suggest to do it with the camera unplugged, well, I did it with it connected, so <strong>maybe</strong> it’s OK</li>
 </ul>
+<p><strong><em>Special thanks to Dr. Hu’s equation, that’s the basis of the experiment.</em></strong></p>
 </div></article></div></section><footer><div class="paginator"><a href="/2020/03/14/rvo-static-variable/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'zhipeng';
 var disqus_identifier = '2020/05/28/picamera-adjust-focus/';
 var disqus_title = 'Adjust Raspberry Pi camera lens to fix the blurry issue';
